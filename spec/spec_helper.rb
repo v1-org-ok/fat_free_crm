@@ -18,6 +18,11 @@ require 'ffaker'
 require 'timecop'
 require 'webdrivers'
 
+require "simplecov"
+require 'database_cleaner'
+puts "Running with SimpleCov"
+SimpleCov.start "rails"
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir["./spec/support/**/*.rb"].sort.each { |f| require f }

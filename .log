@@ -1,0 +1,5 @@
+rbenv install 3.3.2
+rbenv local 3.3.2
+bundle install
+DB=sqlite RAILS_ENV=test bundle exec rake spec:preparedb
+DB=sqlite bundle exec rspec

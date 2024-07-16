@@ -69,6 +69,7 @@ group :development, :test do
   gem 'rubocop'
   gem 'rainbow'
   gem 'puma' # used by capybara 3
+  gem "simplecov", "~> 0.22.0", require: false
 end
 
 group :test do
